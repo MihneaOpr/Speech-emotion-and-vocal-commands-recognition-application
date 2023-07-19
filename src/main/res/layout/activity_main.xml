@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/page1Layout"
+        android:layout_width="match_parent"
+        android:layout_height="512dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="visible"
+        tools:visibility="gone">
+
+        <ImageView
+            android:id="@+id/emojiEmotionImageView"
+            android:layout_width="87dp"
+            android:layout_height="83dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/emoji_default" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Emotion metrics"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewNeutrality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neutrality:" />
+
+        <ProgressBar
+            android:id="@+id/progressBarNeutrality"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewCalmness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calmness:" />
+
+        <ProgressBar
+            android:id="@+id/progressBarCalmness"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewHappiness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Happiness:" />
+
+        <ProgressBar
+            android:id="@+id/progressBarHappiness"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewSadness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sadness:" />
+
+        <ProgressBar
+            android:id="@+id/progressBarSadness"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewAnger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anger:" />
+
+        <ProgressBar
+            android:id="@+id/progressBarAnger"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewFear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fear:" />
+
+        <ProgressBar
+            android:id="@+id/progressBarFear"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewDisgust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disgust:" />
+
+        <ProgressBar
+            android:id="@+id/progressBarDisgust"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewSurprised"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surprised:" />
+
+        <ProgressBar
+            android:id="@+id/progressBarSurprised"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/startRecordingButton"
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="64dp"
+        android:background="#FFFFFF"
+        android:drawableTop="@drawable/microphone2"
+        android:scaleType="fitCenter"
+        android:text="Start Recording"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/switchButton"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:text="Switch Page"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:id="@+id/page2Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:text="Command metrics"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewAvarii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avarii:" />
+
+        <ProgressBar
+            android:id="@+id/progressBarAvarii"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewClaxon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Claxon:" />
+
+        <ProgressBar
+            android:id="@+id/progressBarClaxon"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewFrana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frana:" />
+
+        <ProgressBar
+            android:id="@+id/progressBarFrana"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewInainte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inainte:" />
+
+        <ProgressBar
+            android:id="@+id/progressBarInainte"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewInapoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inapoi:" />
+
+        <ProgressBar
+            android:id="@+id/progressBarInapoi"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewLumini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lumini:" />
+
+        <ProgressBar
+            android:id="@+id/progressBarLumini"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radio:" />
+
+        <ProgressBar
+            android:id="@+id/progressBarRadio"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start:" />
+
+        <ProgressBar
+            android:id="@+id/progressBarStart"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop:" />
+
+        <ProgressBar
+            android:id="@+id/progressBarStop"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
